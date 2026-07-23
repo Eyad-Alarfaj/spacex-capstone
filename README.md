@@ -1,35 +1,50 @@
 # SpaceX Falcon 9 First Stage Landing Prediction
-## IBM Applied Data Science Capstone Project
+## IBM Applied Data Science Capstone
 
-### Project Overview
-This project demonstrates a complete end-to-end data science pipeline using SpaceX Falcon 9 launch data. It includes data collection, exploratory analysis, feature engineering, SQL analytics, interactive visualizations, and predictive machine learning models.
+Predicting whether the Falcon 9 first stage lands successfully — the factor that determines whether a launch costs $62M or $165M+.
 
-### Dataset
-- **98 Falcon 9 launches** (2015-2023)
-- **75.5% success rate** (74 successful, 24 failed)
-- **4 launch sites**: CCAFS LC-40, VAFB SLC-4E, KSC LC-39A, Boca Chica
-- **6 orbit types**: LEO, GEO, ISS, HEO, SSO
+## Final Presentation
+**[Final_Presentation_SpaceX_Capstone.pdf](Final_Presentation_SpaceX_Capstone.pdf)** — 24-slide deck with all methodology, charts, map, dashboard, and model results.
 
-### Key Results
+## Dataset
+98 Falcon 9 launches (2015-09-28 → 2023-09-27) · 74 successful landings, 24 failures (75.5%)
 
-#### Success Rates by Site
-- KSC LC-39A: 100% | CCAFS LC-40: 73% | VAFB SLC-4E: 69% | Boca Chica: 100%
+## Notebooks (all executed, outputs included)
+| Notebook | Purpose |
+|---|---|
+| `01_data_collection.ipynb` | Load & validate 98 launch records |
+| `02_data_wrangling.ipynb` | Target creation, feature engineering, one-hot encoding |
+| `03_eda_visualization.ipynb` | EDA charts: site, orbit, payload, experience, yearly trend |
+| `04_eda_sql.ipynb` | Six SQL queries against SQLite |
+| `05_folium_maps.ipynb` | Interactive launch-site map (`spacex_map.html`) |
+| `06_predictive_analysis.ipynb` | Four classifiers, stratified 80/20 split |
 
-#### Best Predictive Model: SVM (84% accuracy)
-| Model | Accuracy | Precision | Recall | ROC-AUC |
-|-------|----------|-----------|--------|---------|
-| **SVM (RBF)** | **84%** | **88%** | **100%** | **0.92** |
-| Logistic Regression | 79% | 86% | 95% | 0.85 |
-| Decision Tree | 74% | 83% | 90% | 0.79 |
-| KNN | 68% | 78% | 86% | 0.72 |
+## Key Results
+- **Success by site:** Boca Chica 100% · KSC LC-39A 81% · VAFB SLC-4E 80% · CCAFS LC-40 68%
+- **Success by orbit:** ISS 94% · GEO 94% · LEO 83% · SSO 44% · HEO 25%
+- **Learning curve:** 50% (2015–16) → 69% (2017–19) → 89% (2020–23)
+- **Booster experience:** 51% success for new boosters → 83% (1–2 landings) → 100% (3+)
+- **Payload penalty:** failed flights average ~585 kg heavier than successes
 
-### Deliverables
-✓ 01_data_collection.ipynb - Load & validate dataset
-✓ 02_data_wrangling.ipynb - Feature engineering
-✓ 03_eda_visualization.ipynb - Success analysis
-✓ 04_eda_sql.ipynb - SQL analytics
-✓ 05_folium_maps.ipynb - Interactive maps
-✓ 06_predictive_analysis.ipynb - ML models
+## Model Performance (20-flight held-out test set)
+| Model | Accuracy | Precision | Recall | F1 |
+|---|---|---|---|---|
+| **SVM (RBF)** ⭐ | **90%** | **88%** | **100%** | **0.94** |
+| Logistic Regression | 85% | 88% | 93% | 0.90 |
+| Decision Tree | 85% | 88% | 93% | 0.90 |
+| KNN (k=5) | 85% | 88% | 93% | 0.90 |
 
-### Technologies
-Python, pandas, scikit-learn, matplotlib, seaborn, folium, SQLite3
+Best model: **SVM (RBF)** — confusion matrix TP=15, TN=3, FP=2, FN=0. 100% recall means no successful landing is ever missed. Saved as `svm_model.pkl`.
+
+## Dashboard & Map
+- `spacex_dash_dashboard.html` — 4-panel Plotly Dash dashboard
+- `spacex_map.html` — Folium interactive map
+- `charts/` — all presentation figures
+
+## Reproduce
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn folium plotly jupyter
+jupyter nbconvert --execute --inplace 0*.ipynb
+```
+
+**Author:** Eyad Alarfaj
