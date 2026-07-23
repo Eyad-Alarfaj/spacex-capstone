@@ -1,0 +1,99 @@
+Flight_Number,Date,Booster,Launch_Site,Orbit,Payload_Mass_kg,Customer,Landing_Outcome
+1,2015-03-02,Falcon 9,CCAFS,LEO,6000.0,COTS Demo,Failure
+2,2015-04-14,Falcon 9,CCAFS,ISS,2296.0,SpaceX CRS-6,Failure
+3,2015-06-02,Falcon 9,CCAFS,GEO,5500.0,Eutelsat,Failure
+4,2015-08-09,Falcon 9,CCAFS,ISS,2034.0,SpaceX CRS-7,Failure
+5,2015-12-22,Falcon 9,CCAFS,ISS,1316.0,SpaceX CRS-8,Success
+6,2016-01-31,Falcon 9,CCAFS,ISS,2034.0,SpaceX CRS-9,Success
+7,2016-03-04,Falcon 9,CCAFS,ISS,1898.0,SpaceX CRS-10,Success
+8,2016-04-08,Falcon 9,CCAFS,GEO,5271.0,SES-9,Failure
+9,2016-05-06,Falcon 9,CCAFS,ISS,2008.0,SpaceX CRS-11,Success
+10,2016-06-15,Falcon 9,CCAFS,GEO,5600.0,ABS-2A,Success
+11,2016-07-18,Falcon 9,CCAFS,ISS,1952.0,SpaceX CRS-12,Failure
+12,2016-08-24,Falcon 9,CCAFS,GEO,5000.0,JCSAT-16,Success
+13,2016-10-07,Falcon 9,KSC,ISS,2255.0,SpaceX CRS-13,Success
+14,2016-12-15,Falcon 9,CCAFS,GEO,5600.0,JCSAT-14,Success
+15,2017-01-14,Falcon 9,CCAFS,ISS,2395.0,SpaceX CRS-14,Success
+16,2017-02-19,Falcon 9,CCAFS,GEO,3600.0,EchoStar 23,Success
+17,2017-03-16,Falcon 9,CCAFS,ISS,2295.0,SpaceX CRS-15,Failure
+18,2017-04-20,Falcon 9,CCAFS,ISS,2462.0,SpaceX CRS-16,Success
+19,2017-05-15,Falcon 9,CCAFS,GEO,3900.0,Inmarsat,Success
+20,2017-06-25,Falcon 9,CCAFS,ISS,2520.0,SpaceX CRS-17,Success
+21,2017-08-14,Falcon 9,CCAFS,GEO,6070.0,DSN 1,Success
+22,2017-09-07,Falcon 9,CCAFS,ISS,2395.0,SpaceX CRS-18,Success
+23,2017-10-09,Falcon 9,CCAFS,ISS,2205.0,SpaceX CRS-19,Failure
+24,2017-12-23,Falcon 9,CCAFS,GEO,5500.0,Iridium,Success
+25,2018-01-30,Falcon 9,CCAFS,ISS,2700.0,SpaceX CRS-20,Success
+26,2018-02-22,Falcon Heavy,KSC,HEO,1420.0,Tesla,Success
+27,2018-04-02,Falcon 9,CCAFS,ISS,2703.0,SpaceX CRS-21,Success
+28,2018-05-22,Falcon 9,CCAFS,GEO,3400.0,Bangabandhu,Success
+29,2018-06-04,Falcon 9,CCAFS,ISS,2647.0,SpaceX CRS-22,Success
+30,2018-07-22,Falcon 9,CCAFS,GEO,5400.0,Merah Putih,Failure
+31,2018-01-15,Falcon 9,CCAFS,LEO,2500.0,Customer_31,Success
+32,2018-02-15,Falcon 9,KSC,ISS,3500.0,Customer_32,Success
+33,2018-03-15,Falcon 9,CCAFS,GEO,4500.0,Customer_33,Success
+34,2018-04-15,Falcon 9,KSC,HEO,5500.0,Customer_34,Success
+35,2018-05-15,Falcon 9,CCAFS,LEO,6500.0,Customer_35,Success
+36,2018-06-15,Falcon 9,KSC,ISS,1500.0,Customer_36,Success
+37,2018-07-15,Falcon 9,CCAFS,GEO,2500.0,Customer_37,Success
+38,2018-08-15,Falcon 9,KSC,HEO,3500.0,Customer_38,Success
+39,2018-09-15,Falcon 9,CCAFS,LEO,4500.0,Customer_39,Failure
+40,2018-10-15,Falcon 9,KSC,ISS,5500.0,Customer_40,Failure
+41,2018-11-15,Falcon 9,CCAFS,GEO,6500.0,Customer_41,Success
+42,2018-12-15,Falcon 9,KSC,HEO,1500.0,Customer_42,Success
+43,2019-01-15,Falcon 9,CCAFS,LEO,2500.0,Customer_43,Success
+44,2019-02-15,Falcon 9,KSC,ISS,3500.0,Customer_44,Success
+45,2019-03-15,Falcon 9,CCAFS,GEO,4500.0,Customer_45,Success
+46,2019-04-15,Falcon 9,KSC,HEO,5500.0,Customer_46,Success
+47,2019-05-15,Falcon 9,CCAFS,LEO,6500.0,Customer_47,Success
+48,2019-06-15,Falcon 9,KSC,ISS,1500.0,Customer_48,Success
+49,2019-07-15,Falcon 9,CCAFS,GEO,2500.0,Customer_49,Failure
+50,2019-08-15,Falcon Heavy,KSC,HEO,3500.0,Customer_50,Failure
+51,2019-09-15,Falcon 9,CCAFS,LEO,4500.0,Customer_51,Success
+52,2019-10-15,Falcon 9,KSC,ISS,5500.0,Customer_52,Success
+53,2019-11-15,Falcon 9,CCAFS,GEO,6500.0,Customer_53,Success
+54,2019-12-15,Falcon 9,KSC,HEO,1500.0,Customer_54,Success
+55,2020-01-15,Falcon 9,CCAFS,LEO,2500.0,Customer_55,Success
+56,2020-02-15,Falcon 9,KSC,ISS,3500.0,Customer_56,Success
+57,2020-03-15,Falcon 9,CCAFS,GEO,4500.0,Customer_57,Success
+58,2020-04-15,Falcon 9,KSC,HEO,5500.0,Customer_58,Success
+59,2020-05-15,Falcon 9,CCAFS,LEO,6500.0,Customer_59,Failure
+60,2020-06-15,Falcon 9,KSC,ISS,1500.0,Customer_60,Failure
+61,2020-07-15,Falcon 9,CCAFS,GEO,2500.0,Customer_61,Success
+62,2020-08-15,Falcon 9,KSC,HEO,3500.0,Customer_62,Success
+63,2020-09-15,Falcon 9,CCAFS,LEO,4500.0,Customer_63,Success
+64,2020-10-15,Falcon 9,KSC,ISS,5500.0,Customer_64,Success
+65,2020-11-15,Falcon 9,CCAFS,GEO,6500.0,Customer_65,Success
+66,2020-12-15,Falcon 9,KSC,HEO,1500.0,Customer_66,Success
+67,2021-01-15,Falcon 9,CCAFS,LEO,2500.0,Customer_67,Success
+68,2021-02-15,Falcon 9,KSC,ISS,3500.0,Customer_68,Success
+69,2021-03-15,Falcon 9,CCAFS,GEO,4500.0,Customer_69,Failure
+70,2021-04-15,Falcon 9,KSC,HEO,5500.0,Customer_70,Failure
+71,2021-05-15,Falcon 9,CCAFS,LEO,6500.0,Customer_71,Success
+72,2021-06-15,Falcon 9,KSC,ISS,1500.0,Customer_72,Success
+73,2021-07-15,Falcon 9,CCAFS,GEO,2500.0,Customer_73,Success
+74,2021-08-15,Falcon 9,KSC,HEO,3500.0,Customer_74,Success
+75,2021-09-15,Falcon Heavy,CCAFS,LEO,4500.0,Customer_75,Success
+76,2021-10-15,Falcon 9,KSC,ISS,5500.0,Customer_76,Success
+77,2021-11-15,Falcon 9,CCAFS,GEO,6500.0,Customer_77,Success
+78,2021-12-15,Falcon 9,KSC,HEO,1500.0,Customer_78,Success
+79,2022-01-15,Falcon 9,CCAFS,LEO,2500.0,Customer_79,Failure
+80,2022-02-15,Falcon 9,KSC,ISS,3500.0,Customer_80,Failure
+81,2022-03-15,Falcon 9,CCAFS,GEO,4500.0,Customer_81,Success
+82,2022-04-15,Falcon 9,KSC,HEO,5500.0,Customer_82,Success
+83,2022-05-15,Falcon 9,CCAFS,LEO,6500.0,Customer_83,Success
+84,2022-06-15,Falcon 9,KSC,ISS,1500.0,Customer_84,Success
+85,2022-07-15,Falcon 9,CCAFS,GEO,2500.0,Customer_85,Success
+86,2022-08-15,Falcon 9,KSC,HEO,3500.0,Customer_86,Success
+87,2022-09-15,Falcon 9,CCAFS,LEO,4500.0,Customer_87,Success
+88,2022-10-15,Falcon 9,KSC,ISS,5500.0,Customer_88,Success
+89,2022-11-15,Falcon 9,CCAFS,GEO,6500.0,Customer_89,Failure
+90,2022-12-15,Falcon 9,KSC,HEO,1500.0,Customer_90,Failure
+91,2023-01-15,Falcon 9,CCAFS,LEO,2500.0,Customer_91,Success
+92,2023-02-15,Falcon 9,KSC,ISS,3500.0,Customer_92,Success
+93,2023-03-15,Falcon 9,CCAFS,GEO,4500.0,Customer_93,Success
+94,2023-04-15,Falcon 9,KSC,HEO,5500.0,Customer_94,Success
+95,2023-05-15,Falcon 9,CCAFS,LEO,6500.0,Customer_95,Success
+96,2023-06-15,Falcon 9,KSC,ISS,1500.0,Customer_96,Success
+97,2023-07-15,Falcon 9,CCAFS,GEO,2500.0,Customer_97,Success
+98,2023-08-15,Falcon 9,KSC,HEO,3500.0,Customer_98,Success
