@@ -1,0 +1,25 @@
+{
+  "Logistic Regression": {
+    "cv": 84.64,
+    "test": 83.33
+  },
+  "SVM": {
+    "cv": 84.82,
+    "test": 83.33
+  },
+  "Decision Tree": {
+    "cv": 84.82,
+    "test": 88.89
+  },
+  "KNN": {
+    "cv": 84.82,
+    "test": 83.33
+  },
+  "best": "Decision Tree",
+  "cm": {
+    "tn": 5,
+    "fp": 1,
+    "fn": 1,
+    "tp": 11
+  }
+}
